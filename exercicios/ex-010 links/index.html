@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links externos</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no Github.</a></p><!--Use o envelopamento 'a' de anchor para criar a 'referêmcia à hipertexto' e assim linka-lo a outro site, use também 'target=blank' para criar uma janela em branco para que este link temha janela em branco como 'alvo(target)' e assim o cliente voltará a seu site e use também 'rel=external' que significa que este link vai para fora de seu site, ou seja, externo, fazendo com que o link não sobreponha seu site usando a combinação de 'target' e 'rel'-->
+    <p>\Você também pode acessar meu <a href="https://youtube.com/cursoemvideo" target="_blank" ref="external">canal gratuito no youtube.</a></p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Para acessar a segunda página <a href="pag002.html" rel="next" target="_self">clique aqui.</a></p><!--Quando o link é interno não precisa indicar a URL inteira contanto que a página esteja na mesma pasta do index. Use rel= next para facilitar o mecanismo de busca a encontrar qual navegar você quer e não deixar o google decidir qual será a próxima página-->
+    <p>Para acessar a página de notícias <a href="noticias/pag003.html" rel="next" target="_self">clique aqui.</a></p><!--Use target=_self(ou não faça nada) para indicar ao navegador para não abrir uma nova janela com este conteúdo, para evitar do cliente ficar com váiras janelas abertas no caso quando for link para o seu site-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro1.zip" download="meulivro1.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

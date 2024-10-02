@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            /* - BOX LEVEL
+            Aqui são as configurações primárias da sua caixa*/
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            /* Aqui começa os 'estilos' de sua caixa, pode ser vizualizado nas dev tools do google 
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            
+            - SHORTHAND          
+              SUBSTITUA ESTAS 3 LINHAS ACIMA SOMENTE POR UMA LINHA ASSIM COMO FOI FEITO ABAIXO, E COLOQUE OS VALORES NA MESMA ORDEM QUE SE ENCONTRAVAM ANTES ASSIM COMO FEITO ABAIXO*/
+
+            border: 10px solid darkslategray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            - SHORTHAND
+             Assim como feito acima o padding também pode ser simplificado com uma linha, basta seguir o sentido horário no preeenchimento dos valores mas se os valores forem todos iguais coloque apenas um valor, e se forem colocados apenas dois valores o 1° valor representa o top e o bottom e o 2° valor representa right e left*/
+            
+            padding: 10px;
+
+            /*margin: auto; Use 'margin: auto'  para centralizar seu h1 , assim como 'text-align: center'*/
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-right: 20px;
+
+            - SHORTHAND
+             Assim como padding, margin funciona igual com relação aos valores*/
+            
+            margin: 20px auto 40px auto;
+            
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            - SHORTHAND
+             Outline também pode ser simplificado mas os valores devem ser colocados nesta ordem*/
+             
+            outline: 5px dashed salmon; 
+        }
+        a{
+            /* - INLINE LEVEL
+            Para alterar sua caixa de box level para inline level, altere a conifg. 'display' se for block altere para inline ou se for inline altere para block como visto anteriormente e como feito abaixo com o link que era nativamente de característica 'display: inline'
+            Estas propriedades podem ser configuradas depois em seu código original e para ter acesso as informações destas propriedades, acesse as dev tools e abaixo da box na seção filter estão todas as propriedades do site*/
+            
+            /* Use a configuração inline-block para alterar altura e largura da sua box pois a característica inline não permite mexer em altra e largura*/
+            display: block;
+            border: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

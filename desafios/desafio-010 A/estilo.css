@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'droid';
+    src: url('docs/pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(122, 222, 140);
+    margin: 0px;
+    padding-bottom: 40px;
+}
+header{
+    margin: -10px -10px;
+    padding: 20px 10px;
+    background-image:linear-gradient(to top, rgb(0, 86, 0), rgb(91, 146, 91),rgb(130, 207, 130));
+}
+nav{
+    margin-bottom: -15px;
+}
+nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+nav > a:hover{
+    padding: 3px;
+    margin-left: 10px;
+    background-color: rgba(211, 211, 211, 0.374);
+}
+h1#titulo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+h1#titulo > p{
+    font: normal 15px arial, helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+main{
+    margin: auto;
+    background-color: white;
+    width: 600px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1#principal{
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    font-family: 'droid', Times, sans-serif;
+    color:  rgb(69, 112, 69);
+}
+p{
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    text-indent: 30px;
+    color: black;
+    text-align: justify;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px 20px;
+    font-family: 'droid', Times, sans-serif;
+    color:  rgb(69, 112, 69);
+    font-size: 20px;
+}
+.subtitulo{
+    background-image: linear-gradient(to right, rgb(148, 197, 197), rgb(255, 255, 255));
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.imagem{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+ul li::before{
+    content: "\002714";
+}
+section#lista{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: rgb(201, 255, 201);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+}
+p#cabecalho{
+    background-color: rgb(122, 222, 140);
+    color:white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+ul#dois{
+    text-align: right;
+    padding-right: 150px;
+    margin-top: -135px;
+}
+footer{
+    background-color: rgb(0, 86, 0);
+    padding: 4px;
+    margin-top: 20px;
+    
+}
+footer > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}

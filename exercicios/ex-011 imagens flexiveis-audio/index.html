@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em diferentes dispositivos ou simplesmemte aumente ou diminua a tela de seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--Este código não estava funcionando direito com sua flexibilidade de tamanhos de página, parece que quando as imagens que foram salvas estavam sem traço para indicar o tamanho delas 'imagens/foto p.png' quando o certo seria 'imagens/foto-p.png'-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--Sempre coloque os 'sources' acima da sua imagem principal e sempre também em ordem da menor imagem para a maior imagem pois assim evitaremos de a imagem não ser flexível dependendo do tamanho do navegador-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em html5.</p>
+    <audio preload="none" controls> <!--Use 'loop' para fazer um loop no seu audio assim que terminar-->
+        <!--Use este parâmetro abaixo para, assim como as imagens, os audios ficarem audíveis em diversos formatos e navegadores, mas para isso você deverá ter todos os formatos baixados e colocados na sua pasta 'midia' e também colocar os 'sources' em ordem-->
+        <source src="midia/Thug Dub - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midia/Thug Dub - Quincas Moreira.ogg" type="audio/ogg">
+        <source src="midia/Thug Dub - Quincas Moreira.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir este audio. <a href="midia/Thug Dub - Quincas Moreira.mp3" download="Thug Dub - Quincas Moreira" type="audio/mpeg">clique aqui para fazer o download</a></p>
+    </audio>
+</body>
+</html>
