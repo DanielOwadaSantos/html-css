@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; use esta tecninca para deixar a frase com letras maiúsculas*/
+    font-variant: small-caps;/*as letras continuam maiúsculas porém as primeiras são maiores que o restante*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;/*esta configuração faz bordas de 10% da viweport em todas as sections*/
+    padding-bottom: 10vh;
+    line-height: 2em;/* cria espaçamento entre uma linha e outra */
+    padding-left: 30px;/* cria espaço na esuerda como se fosse uma margem em todas as sections*/
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(74, 74, 74);
+    color: white;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.194);
+    width: 400px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
