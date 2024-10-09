@@ -12,13 +12,35 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+        thead > tr > th{/*configuração para grudar o cabeçalho da tabela toda vez que a página descer muito abaixo*/
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){/*Este '2n' significa que ira acontecer a zebra de 2 em 2 linhas e pode ser alterado para 3n, 4n etc, use 'odd' para fazer o efeito zebrado na linhas ímpares que da no mesmo que '2n-1', 'even' pode ser usado para zebrar linhas pares também */
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightskyblue;
+            text-decoration: underline;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        .num{
+            text-align: right;
         }
     </style>
 </head>
@@ -35,32 +57,136 @@
                 TR, TD, TD
     -->
     <table>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>SÃO PAULO</td>
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>MINAS GERAIS</td>
-                <td>21 198 791</td>
+                <td class="num">21 198 791</td>
             </tr>
             <tr>
                 <td>RIO DE JANEIRO</td>
-                <td>17 934 872</td>
+                <td class="num">17 934 872</td>
+            </tr>
+            <tr>
+                <td>BAHIA</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>PARANÁ</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>RIO GRANDE DO SUL</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>PERNAMBUCO</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>CEARÁ</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>PARÁ</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>SANTA CATARINA</td>
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>GOIÁS</td>
+                <td class="num">7 350 483</td>
+            </tr>
+            <tr>
+                <td>MARANHÃO</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>AMAZONAS</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td>PARAÍBA</td>
+                <td class="num">4 145 040</td>
+            </tr>
+            <tr>
+                <td>ESPÍRITO SANTO</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td>MATO GROSSO</td>
+                <td class="num">3 836 399</td>
+            </tr>
+            <tr>
+                <td>RIO GRANDE DO NORTE</td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td>PIAUÍ</td>
+                <td class="num">3 375 646</td>
+            </tr>
+            <tr>
+                <td>ALAGOAS</td>
+                <td class="num">3 220 104</td>
+            </tr>        
+            <tr>
+                <td>DISTRITO FEDERAL</td>
+                <td class="num">2 982 815</td>
+            </tr>
+            <tr>
+                <td>MATO GROSSO DO SUL</td>
+                <td class="num">2 901 077</td>
+            </tr>
+            <tr>
+                <td>SERGIPE</td>
+                <td class="num">2 291 077</td>
+            </tr>
+            <tr>
+                <td>RONDÔNIA</td>
+                <td class="num">1 746 227</td>
+            </tr>
+            <tr>
+                <td>TOCANTINS</td>
+                <td class="num">1 577 342</td>
+            </tr>
+            <tr>
+                <td>ACRE</td>
+                <td class="num">880 631</td>
+            </tr>
+            <tr>
+                <td>AMAPÁ</td>
+                <td class="num">802 837</td>
+            </tr>
+            <tr>
+                <td>RORAIMA</td>
+                <td class="num">716 793</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>TOTAL DE HABITANTES</th>
-                <td>00000</td>
+                <th scope="row">TOTAL DE HABITANTES</th>
+                <td class="num"><strong>212 583 720</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, est iure incidunt praesentium enim eius nostrum eaque impedit dolore suscipit ducimus quos unde in, vero aliquid? Praesentium maiores facere voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora odio vero enim voluptas modi expedita pariatur! Doloribus hic natus, vel, accusamus adipisci aut a qui, fugit ea quaerat laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam amet iure ad laboriosam sunt at sequi laudantium, ducimus, architecto, quas minus delectus quia omnis dicta praesentium? Alias, minus exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia odit similique tenetur esse quos modi praesentium laudantium enim perspiciatis omnis illo, rerum libero nisi quia natus consequuntur est harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro pariatur deserunt optio, sunt tempora amet consectetur ex, quia vero repellat commodi magnam culpa necessitatibus. Natus repellendus illum suscipit delectus?</p>
 </body>
 </html>
