@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quos mollitia odio maxime consequatur repellat nemo! Quod, id dolorem voluptas sapiente nobis obcaecati voluptatem perspiciatis asperiores doloribus, adipisci cupiditate rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quo excepturi, tempore error quasi accusamus non sed ex dicta quaerat quisquam corrupti officia delectus minus fugit iste maiores quos doloremque.</p>
+    
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer" >Seu navegador não é compatível com isso</iframe>
+    <!--SANDBOX é uma camada de proteção contra sites maliciosos que tentam pegar seus dados dentro do iframe, colocando o valor 'sandbox' se cria um bloqueio contra estes sites-->
+    <!--REFERRERPOLICY é uma proteção contra seus dados coletados, por padrão a configuração inicial é 'no-referrer-when-downgrade', então não é preciso colocar, colocando o valor 'no-referrer' isso torna o iframe mais limitado, dizendo que o conteúdo dentro do iframe não irá coletar dados do usuário e tornado-o mais seguro também-->
+    <!--Este conjunto de configurações: sandbox e referrerpolicy - vão ligar o maximo de segurança dentro de seu iframe-->
+    <!--O valor 'SANDBOX' é sua configuração em segurança máxima, não permitindo nem que o formulário funcione, mudando o valor do sandbox para 'allow-same-origin' você permite que seu formulário funcione se a pasta estive na mesma origem-->
+    <!--Ao lado de 'allow-same-origin' você ode colocar outras configurações apertando 'ctrl+space' 
+    para adicionar permisão de uso de fomulários coloque 'allow-forms' e para permitir uso de scripts coloque 'allow-scripts'-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt aliquid cum, mollitia laboriosam consequatur necessitatibus dolorum accusantium quae. Animi ratione veniam deleniti esse inventore unde vero soluta magnam. Dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sapiente reprehenderit dignissimos nam asperiores quos repellendus commodi eius iure? Exercitationem, nostrum. Tempore ducimus recusandae aliquid laudantium asperiores voluptatibus qui iure.</p>
+</body>
+</html>

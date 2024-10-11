@@ -10,12 +10,17 @@ body{
     padding-bottom: 40px;
 }
 header{
-    margin: -10px -10px;
-    padding: 20px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px ;
+    padding-top: 0px;
+    padding-bottom: 0px ;
     background-image:linear-gradient(to top, rgb(0, 86, 0), rgb(91, 146, 91),rgb(130, 207, 130));
 }
 nav{
-    margin-bottom: -15px;
+    margin-top: -21px;
+    margin-bottom: -7px;
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
 nav > a{
     font-family: Arial, Helvetica, sans-serif;
