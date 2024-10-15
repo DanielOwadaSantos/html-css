@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro fomulário</h1>
+    <!--a funçao autocomplete serve para ativar ou desativar a sugestão que aparece ao clicar sobre a caixa de respostas-->
+    <form action="cadastro.php" autocomplete="off" method="post"><!--use methodo post para não mostrasr seus dados que foram cadastrados na url, mas isso não é uma proteão, é uma formna de esconder da vista do usuário, o metodo get é o metodo padrão e melhor não ser usado quando for solicitado dados sensíveis pois este metodp deixa os dados à vista na url, e também só pode ser compartilhado um máximo de 3000 bits(3000 letras), para envio de dades sensíveis use 'post'-->
+        <p><!--A diferença entre o 'name' e o 'id' é que para todo formulário em php, todo input, ou seja, todo objeto de entrada, precisa ter um nome(name), o mesmo serve para 'id' mas com a linguagem javascprit, todos campos de entrada precisam ter uma 'identificação'. O 'id' também será usado para 'label' -->
+            <label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
