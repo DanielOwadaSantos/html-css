@@ -11,14 +11,14 @@ body{
 }
 header{
     margin-top: 0px;
-    margin-bottom: 0px ;
+    margin-bottom: -38px ;
     padding-top: 0px;
-    padding-bottom: 0px ;
+    padding-bottom: 30px ;
     background-image:linear-gradient(to top, rgb(0, 86, 0), rgb(91, 146, 91),rgb(130, 207, 130));
 }
 nav{
-    margin-top: -21px;
-    margin-bottom: -7px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding-top: 10px;
     padding-bottom: 0px;
 }
@@ -33,6 +33,7 @@ nav > a:hover{
     padding: 3px;
     margin-left: 10px;
     background-color: rgba(211, 211, 211, 0.374);
+    box-sizing: border-box;
 }
 h1#titulo{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
