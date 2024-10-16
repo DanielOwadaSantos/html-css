@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend><!--no input:radio, marque o mesmo 'name' dos inputs, para fazer efeito de desmarcação automática da outra checkbox, como feito aqui abaixo-->
+            <input type="radio" name="sexo" id="isema" value="M"><label for="isema">Masculino</label><br>
+            <input type="radio" name="sexo" id="isefe" checked value="F"><label for="isefe">Feminino</label><br>
+        </fieldset><!--use a configuração 'checked' para já deixar um checkbox pré-marcado-->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut" checked ><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esskt" id="iesskt"><label for="iesskt">Skate</label><br>
+            <input type="checkbox" name="esnfl" id="iesnfl"><label for="iesnfl">NFL</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
