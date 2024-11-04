@@ -8,6 +8,7 @@
         *{
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
         body{
             height: 95vh;
@@ -33,27 +34,52 @@
             color: white;
             width: 200px;
             height: 80px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .temp{
+            background-color: rgb(20, 20, 101);
+            font-size: 2em;
+        }
+        .temp2{
+            background-color: rgb(26, 26, 188);
+        }
+        .regiao{
+            background-color: rgb(35, 35, 199);
+            font-size: 1.5em;
         }
         #banner{
-            margin-left: 10px;
-            background-color: blue;
+            margin-left: 300px;
             color: white;
             height: 80px;
+            width: 700px;
+            display: flex;
+            flex-flow: column nowrap;
+
         }
         .titulo{
+            background-color: rgb(20, 20, 101)
             font-size: 2em;
+            flex: auto;
+            padding: 5px 0px 5px 20px;
+        }
+        .titulo2{
+            background-color: white;
+            color: blue;
+            font-size: 1.5em;
+            flex: auto;
         }
     </style>
 </head>
 <body>
     <main>
         <div id="clima">
-            <p id="temp"><span>&#x26c5;</span><span>21°</span></p>
-            <p>São Paulo</p>
+            <p class="temp"><span>&#x26c5;</span><span class="temp2">21°</span></p>
+            <p class="regiao">São Paulo</p>
         </div>
         <div id="banner">
             <p class="titulo">CORINTHIANS VENCE PALMEIRAS POR 4X0</p>
-            <p>Timão ganhou seu 8° título brasileiro em 2024</p>
+            <p class="titulo2">Timão ganhou seu 8° título brasileiro em 2024</p>
         </div>
     </main>
 </body>
